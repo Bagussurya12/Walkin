@@ -252,8 +252,8 @@
                           @if(Auth::user()->level == 'admin')
                           <td>
                             <center>
-                              <button type="button" class="btn btn-success btn-sm btn-flat" data-toggle="modal" data-target="#modal-lg-edit{{ $dt->id_tamu }}">Ubah</button>
-                              <button type="button" class="btn btn-warning btn-sm btn-flat" data-toggle="modal" data-target="#modal-sm-hapus{{ $dt->id_tamu }}">Hapus</button>
+                              <button type="button" class="btn btn-warning btn-sm btn-flat" data-toggle="modal" data-target="#modal-lg-edit{{ $dt->id_tamu }}">Ubah</button>
+                              <button type="button" class="btn btn-danger btn-sm btn-flat" data-toggle="modal" data-target="#modal-sm-hapus{{ $dt->id_tamu }}">Hapus</button>
                             </center>
                           </td>
                           @endif
@@ -360,11 +360,16 @@
                                             <div class="col-sm-12">
                                               <select class="form-control select2bs4" id="pilihsumber" required name="sumber"  style="width: 100%;">
                                                 <option value="">Pilih sumber informasi</option>
-                                                <option value="media_publikasi" @if('media_publikasi' == $dt->sumber) selected="selected"@endif>Media publikasi</option>
-                                                <option value="website" @if('website' == $dt->sumber) selected="selected"@endif>Website</option>
-                                                <option value="social_media" @if('social_media' == $dt->sumber) selected="selected"@endif>Social Media</option>
+                                                <option value="billboard tol" @if('billboard Tol' == $dt->sumber) selected="selected"@endif>Billboard Tol</option>
+                                                <option value="billboard jalan raya bogor" @if('billboard jalan raya bogor' == $dt->sumber) selected="selected"@endif>Billboard Jalan Raya Bogor</option>
                                                 <option value="database" @if('database' == $dt->sumber) selected="selected"@endif>Database</option>
-                                                <option value="lain" @if('lain' == $dt->sumber) selected="selected"@endif>Lain-lain</option>
+                                                <option value="flyer" @if('flyer' == $dt->sumber) selected="selected"@endif>Flyer</option>
+                                                <option value="media publikasi" @if('media publikasi' == $dt->sumber) selected="selected"@endif>Media Publikasi (Koran/Majalah/Radio/TV)</option>
+                                                <option value="social media" @if('social media' == $dt->sumber) selected="selected"@endif>Social Media (IG/FB/Tik-Tok/Linkedin)</option>
+                                                <option value="t-banner" @if('t-banner' == $dt->sumber) selected="selected"@endif>T-Banner</option>
+                                                <option value="sign-board" @if('sign-board' == $dt->sumber) selected="selected"@endif>Sign-Board</option>
+                                                <option value="website" @if('website' == $dt->sumber) selected="selected"@endif>Website</option>
+                                                <option value="lain-lain" @if('lain-lain' == $dt->sumber) selected="selected"@endif>Lain-lain</option>
                                                 
                                               </select>
                                               <input type="text" value="{{ $dt->sumberlain }}" name="sumberlain" id="sumberlain" hidden class="form-control mt-3" placeholder="Input sumber informasi lain">
@@ -636,8 +641,8 @@
                       <div class="col-sm-12">
                         <select class="form-control select2bs4"  required name="jk"  style="width: 100%;">
                           <option value="">Pilih jenis kelamin</option>
-                          <option value="pria" >Pria</option>
-                          <option value="wanita" >Wanita</option>
+                          <option value="Pria" >Pria</option>
+                          <option value="Wanita" >Wanita</option>
                           
                         </select>
                       </div>
@@ -646,15 +651,20 @@
                     <div class="form-group row">
                       <div class="col-sm-12">
                         <select class="form-control select2bs4" id="pilihsumber" required name="sumber"  style="width: 100%;">
-                          <option value="">Pilih sumber informasi</option>
-                          <option value="media_publikasi" >Media publikasi</option>
-                          <option value="website" >Website</option>
-                          <option value="social_media" >Social Media</option>
+                          <option value="">Pilih Sumber Informasi</option>
+                          <option value="billboard tol">Billboard Tol</option>
+                          <option value="billboard jalan raya bogor">Billboard Jalan Raya Bogor</option>
                           <option value="database" >Database</option>
-                          <option value="lain" >Lain-lain</option>
+                          <option value="flyer">Flyer</option>
+                          <option value="media publikasi">Media Publikasi (Koran/Majalah/Radio/TV)</option>
+                          <option value="social media">Social Media (IG/FB/Tik-Tok/Linkedin)</option>
+                          <option value="t-banner">T-Banner</option>
+                          <option value="sign-board">Sign-Board</option>
+                          <option value="website" >Website</option>
+                          <option value="lain-lain" >Lain-lain</option>
                           
                         </select>
-                        <input type="text" name="sumberlain" id="sumberlain" hidden class="form-control mt-3" placeholder="Input sumber informasi lain">
+                        <input type="text" name="sumberlain" autocomplete="off" id="sumberlain" hidden class="form-control mt-3" placeholder="Input sumber informasi lain">
                       </div>
                     </div>
                     <div class="form-group row">

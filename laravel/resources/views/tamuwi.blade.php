@@ -211,20 +211,26 @@ scratch. This page gets rid of all links and provides the needed markup only.
                               </div>
                             </div>
       
-                            <div class="form-group row">
-                              <div class="col-sm-12">
-                                <select class="form-control select2bs4" id="pilihsumber" required name="sumber"  style="width: 100%;">
-                                  <option value="">Pilih sumber informasi</option>
-                                  <option value="media_publikasi" >Media publikasi</option>
-                                  <option value="website" >Website</option>
-                                  <option value="social_media" >Social Media</option>
-                                  <option value="database" >Database</option>
-                                  <option value="lain" >Lain-lain</option>
-                                  
-                                </select>
-                                <input type="text" name="sumberlain" autocomplete="off" id="sumberlain" hidden class="form-control mt-3" placeholder="Input sumber informasi lain">
-                              </div>
-                            </div>
+                           
+                      <div class="form-group row">
+                        <div class="col-sm-12">
+                          <select class="form-control select2bs4" id="pilihsumber" required name="sumber"  style="width: 100%;">
+                            <option value="">Pilih Sumber Informasi</option>
+                            <option value="billboard tol">Billboard Tol</option>
+                            <option value="billboard jalan raya bogor">Billboard Jalan Raya Bogor</option>
+                            <option value="database" >Database</option>
+                            <option value="flyer">Flyer</option>
+                            <option value="media publikasi">Media Publikasi (Koran/Majalah/Radio/TV)</option>
+                            <option value="social media">Social Media (IG/FB/Tik-Tok/Linkedin)</option>
+                            <option value="t-banner">T-Banner</option>
+                            <option value="sign-board">Sign-Board</option>
+                            <option value="website" >Website</option>
+                            <option value="lain-lain" >Lain-lain</option>
+                            
+                          </select>
+                          <input type="text" name="sumberlain" autocomplete="off" id="sumberlain" hidden class="form-control mt-3" placeholder="Input sumber informasi lain">
+                        </div>
+                      </div>
       
                             <div class="form-group row">
                               <div class="col-sm-12">
