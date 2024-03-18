@@ -1,31 +1,13 @@
-APP_URL=192.168.2.99:8080
+## progress pembuatan fitur
 
-DB_CONNECTION=pgsql
-DB_HOST=192.168.2.99
-DB_PORT=5432
-DB_DATABASE=hrdb
-DB_USERNAME=postgres
-DB_PASSWORD=obpN3s
-
-
-
-
-
-
-
-
-
-
-
-progress pembuatan fitur
---------------------------
 1. jam kerja -- ok
 2. kategori absen -- ok
 3. setting jam kerja -- ga jadi -- dhapus
-4. kalender kerja  -- ok
+4. kalender kerja -- ok
 
 5. absensi harian -- UI ok -- fungsi admin ok - yang belum add log absen : log tidak dibuat karena log diinput oleh karyawan
 6. tarik absen -- ok
+
     - manual - upload file dat
     - semi manual - tarik absen sesuai fingerprint : lewat terminal
     - otomatis - ga usah dibuat halaman karena otomatis
@@ -35,42 +17,39 @@ progress pembuatan fitur
 9. report absen tahunan - filter by tahun
 10. report datang terlambat - filter by tgl
 11. notifikasi email :
- - tidak absen --> fungsi sudah dibuat, tinggal cron tab schedule nya : disesuaikan hari kerja (jam kerjanya)
- - absen terlambat --> fungsi sudah dibuat, tinggal cron tab schedule nya: disesuaikan hari kerja (jam kerjanya)
 
+-   tidak absen --> fungsi sudah dibuat, tinggal cron tab schedule nya : disesuaikan hari kerja (jam kerjanya)
+-   absen terlambat --> fungsi sudah dibuat, tinggal cron tab schedule nya: disesuaikan hari kerja (jam kerjanya)
 
 12. report form pengajuan --> proses
- - ijin --> proses
- - sakit
- - cuti
- - terlambat
- - lembur
- - resign
 
+-   ijin --> proses
+-   sakit
+-   cuti
+-   terlambat
+-   lembur
+-   resign
 
+=======================================================
+=======================================================
 
-
- =======================================================
- =======================================================
- - struktur jabatan (1) --> ok
- - jatah cuti (2)       --> ok 
- - input form :
-    - cuti (3)          --> ok 
-    - ganti hari (4)    --> ok
-    - datang terlambat (5) --> ok
-    - lembur (6)        --> ok
-    - perjalanan dinas (7)
-    - penilaian karyawan (8)
-    - resign (8) --> ok
-- absen online          -->  ok
+-   struktur jabatan (1) --> ok
+-   jatah cuti (2) --> ok
+-   input form :
+    -   cuti (3) --> ok
+    -   ganti hari (4) --> ok
+    -   datang terlambat (5) --> ok
+    -   lembur (6) --> ok
+    -   perjalanan dinas (7)
+    -   penilaian karyawan (8)
+    -   resign (8) --> ok
+-   absen online --> ok
 
 ========================================================
 halaman direksi --- proses
-- verifikasi absen -> ok
-- verifikasi form karyawan -> ok
-- info absen pegawai ->ok
-- info grafik pegawai -> jumlah laki-laki/perempuan, total karyawan per bagian, karyawan kontrak/tetap
-- dashboard -> ok
 
-
-
+-   verifikasi absen -> ok
+-   verifikasi form karyawan -> ok
+-   info absen pegawai ->ok
+-   info grafik pegawai -> jumlah laki-laki/perempuan, total karyawan per bagian, karyawan kontrak/tetap
+-   dashboard -> ok
